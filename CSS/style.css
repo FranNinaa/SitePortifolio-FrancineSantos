@@ -102,7 +102,7 @@ header {
 
 /* ////........About Me........//// */
 
-.sobre-mim{
+.sobre-mim {
   background-color: #F1B4BB;
   padding: 6rem 0;
 }
@@ -199,37 +199,47 @@ header {
 .progress-line .html {
   width: 80%;
 }
+
 .progress-line .css {
   width: 70%;
 }
+
 .progress-line .bootstrap {
   width: 50%;
 }
+
 .progress-line .javascript {
   width: 50%;
 }
+
 .progress-line .c {
   width: 40%;
 }
+
 .progress-line .csharp {
-    width: 60%;
-  }
-  .progress-line .sql {
-    width: 40%;
-  }
-  .progress-line .mysql {
-    width: 40%;
-  }
-  .progress-line .node {
-    width: 30%;
-  }
-  .progress-line .git {
-    width: 50%;
-  }
-  .progress-line .react {
-    width: 40%;
-  }
-  
+  width: 60%;
+}
+
+.progress-line .sql {
+  width: 40%;
+}
+
+.progress-line .mysql {
+  width: 40%;
+}
+
+.progress-line .node {
+  width: 30%;
+}
+
+.progress-line .git {
+  width: 50%;
+}
+
+.progress-line .react {
+  width: 40%;
+}
+
 
 
 .bar .progress-line span::before {
@@ -261,37 +271,47 @@ header {
 .progress-line .html::after {
   content: "80%";
 }
+
 .progress-line .css::after {
   content: "70%";
 }
+
 .progress-line .bootstrap::after {
   content: "50%";
 }
+
 .progress-line .javascript::after {
   content: "50%";
 }
+
 .progress-line .c::after {
   content: "40%";
 }
+
 .progress-line .csharp::after {
-    content: "60%";
-  }
-  .progress-line .sql::after {
-    content: "40%";
-  }
-  .progress-line .mysql::after {
-    content: "40%";
-  }
-  .progress-line .node::after {
-    content: "30%";
-  }
-  .progress-line .git::after {
-    content: "50%";
-  }
-  .progress-line .react::after {
-    content: "40%";
-  }
-  
+  content: "60%";
+}
+
+.progress-line .sql::after {
+  content: "40%";
+}
+
+.progress-line .mysql::after {
+  content: "40%";
+}
+
+.progress-line .node::after {
+  content: "30%";
+}
+
+.progress-line .git::after {
+  content: "50%";
+}
+
+.progress-line .react::after {
+  content: "40%";
+}
+
 
 .navbar.solid {
   background-color: #132043;
@@ -340,174 +360,99 @@ header {
   padding: 6rem 0;
 }
 
-.proj-heading h1{
+.proj-heading h1 {
   text-align: center;
   color: #F1B4BB;
   font-size: 2.3rem;
   font-weight: 700;
   margin: 3rem 0;
-  
+
 }
 
-.proj-1{
+/* Espaçamento entre projetos */
+.proj-1,
+.proj-2,
+.proj-3,
+.proj-4,
+.proj-5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
-.proj-1 img{
-  height: 330px;
-  width: 380px;
+/* Ajuste do tamanho e sombra das imagens */
+.proj-1 img,
+.proj-2 img,
+.proj-3 img,
+.proj-4 img,
+.proj-5 img {
+  height: 370px;
+  width: 500px;
   object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%);
+  border-radius: 5px;
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
   margin-right: 1.7rem;
 }
 
-.proj-1 .proj1-details{
-  width: 32rem;
-}
-
-.proj-1 .proj1-details i{
-  font-size: 1.5rem;
+/* Cores e fontes uniformes para detalhes do projeto */
+.proj-1 .proj1-details h2,
+.proj-2 .proj2-details h2,
+.proj-3 .proj3-details h2,
+.proj-4 .proj4-details h2,
+.proj-1 .proj1-details p,
+.proj-2 .proj2-details p,
+.proj-3 .proj3-details p,
+.proj-4 .proj4-details p,
+.proj-5 .proj5-details p,
+.proj-1 .proj1-details button a,
+.proj-2 .proj2-details button a,
+.proj-3 .proj3-details button a,
+.proj-4 .proj4-details button a,
+.proj-5 .proj5-details button a  {
   color: #F1B4BB;
 }
 
-.proj-1 .proj1-details h2{
-  font-size: 2rem;
-  color: #F1B4BB;
-}
-
-.proj-1 .proj1-details p{
-  font-size: 1.3rem;
-  color: #F1B4BB;
-  font-weight: 600;
-}
-
-.proj-1 .proj1-details button{
+/* Estilos de botões uniformes */
+.proj-1 .proj1-details button,
+.proj-2 .proj2-details button,
+.proj-3 .proj3-details button,
+.proj-4 .proj4-details button,
+.proj-5 .proj5-details button {
   background: #f0f0e6;
   padding: 0.5rem;
   margin-top: 0.5rem;
   width: 150px;
+  /* Ajusta a largura do botão */
   border: none;
   border-bottom: 2px solid #F1B4BB;
+  /* Linha rosa abaixo do botão */
 }
 
-.proj-1 .proj1-details button a{
-  text-decoration: none; 
-  color: #F1B4BB;
-  font-size: 1.1rem;
-  transition: 0.2s ease-in-out;
-  text-align: center;
-  transition: 0.3s ease-in-out;
-}
-
-.proj-1 .proj1-details button .fas{
-  font-size: 0.7rem;
-  padding: 0.3rem;
-  transition: 0.2s ease-in-out;
-}
-
-.proj-1 .proj1-details button:hover {
+/* Efeitos de hover dos botões */
+.proj-1 .proj1-details button:hover,
+.proj-2 .proj2-details button:hover,
+.proj-3 .proj3-details button:hover,
+.proj-4 .proj4-details button:hover,
+.proj-5 .proj5-details button:hover {
   background: #F1B4BB;
+  /* Fundo rosa ao passar o mouse */
 }
-  
+
 .proj-1 .proj1-details button:hover a,
-.proj-1 .proj1-details button:hover .fas {
-  color: #f0f0e6;
-}
-
-/* ////.....proj2.....//// */
-
-.proj-2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-}
-
-.proj-2 img{
-  height: 330px;
-  width: 380px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%);
-  margin-right: 1.7rem;
-}
-
-.proj-2 .proj2-details{
-  width: 32rem;
-}
-
-.proj-2 .proj2-details i{
-  font-size: 1.5rem;
-  color: #F1B4BB;
-}
-
-.proj-2 .proj2-details h2{
-  font-size: 2rem;
-  color: #F1B4BB;
-}
-
-.proj-2 .proj2-details p{
-  font-size: 1.3rem;
-  color: #F1B4BB;
-  font-weight: 600;
-}
-
-.proj-2 .proj2-details button{
-  background: #f0f0e6;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  width: 150px;
-  border: none;
-  border-bottom: 2px solid #F1B4BB;
-}
-
-.proj-2 .proj2-details button a{
-  text-decoration: none; 
-  color: #F1B4BB;
-  font-size: 1.1rem;
-  transition: 0.2s ease-in-out;
-  text-align: center;
-  transition: 0.3s ease-in-out;
-}
-
-.proj-2 .proj2-details button .fas{
-  font-size: 0.7rem;
-  padding: 0.3rem;
-  transition: 0.2s ease-in-out;
-}
-
-.proj-2 .proj2-details button:hover {
-  background: #F1B4BB;
-}
-  
 .proj-2 .proj2-details button:hover a,
-.proj-2 .proj2-details button:hover .fas {
+.proj-3 .proj3-details button:hover a,
+.proj-4 .proj4-details button:hover a,
+.proj-5 .proj5-details button:hover a,
+.proj-1 .proj1-details button:hover .fas,
+.proj-2 .proj2-details button:hover .fas,
+.proj-3 .proj3-details button:hover .fas,
+.proj-4 .proj4-details button:hover .fas,
+.proj-5 .proj5-details button:hover .fas {
   color: #f0f0e6;
 }
 
-.more-work {
-  text-align: center;
-  margin: 3rem 0 1rem 0;
-}
 
-.more-work p {
-  font-size: 1.6rem;
-  color: #07374a;
-  font-weight: 500;
-}
-
-.more-work a {
-  text-decoration: none;
-  color: #f0f0e6;
-  font-size: 1.3rem;
-}
-
-.more-work a:hover {
-  border-bottom: 2px solid #f0f0e6;
-}
 
 /* ////......Contact......///// */
 
@@ -552,7 +497,7 @@ header {
   transition: 0.3s ease-in-out;
 }
 
-.contact-content a:hover{
+.contact-content a:hover {
   color: #f0f0e6;
 }
 
@@ -588,7 +533,7 @@ header {
     margin-top: 3.2rem;
   }
 
-  .proj-1{
+  .proj-1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -599,8 +544,8 @@ header {
     width: 290px;
     margin-bottom: 0.5rem;
   }
-  
-  .proj-2{
+
+  .proj-2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -655,7 +600,7 @@ header {
     margin-top: 3.2rem;
   }
 
-  .proj-1{
+  .proj-1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -666,8 +611,8 @@ header {
     width: 290px;
     margin-bottom: 0.5rem;
   }
-  
-  .proj-2{
+
+  .proj-2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
